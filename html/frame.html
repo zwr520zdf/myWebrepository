@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML框架/帧</title>
+	</head>
+	
+		<!--定义一个上/中/下的框架集-->
+	<!--<frameset rows="25%,50%,*" border="2" bordercolor="red" frameborder="1">
+		<frame name="top" src="www.baidu.com"/>
+		<frame name="middle" src="www.4399.com"/>
+	
+	</frameset>
+	
+		<!--定义一个上/下[左/右]-->
+	<!--
+    	
+    	<frameset rows="20%,*" border="1" bordercolor="black" border="1">
+			<!--上-->
+	<!--		<frame name="topframe" src="练习网站/手机.html" />
+		</frameset>
+		-->
+		
+	
+		<!--定义一个简单的左右框架集-->
+		<frameset cols="30%,90%">
+			<!--左边/导航窗口[不变]-->
+			<frame src="menu.html" noresize="noresize"/>
+			<!--右边/内容窗口[跳转]-->
+			<!--第一步:为内容窗口起个名字-->
+			<frame src="http://www.baidu.com" name="content" />
+						
+		</frameset>
+</html>

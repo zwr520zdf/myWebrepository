@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML表单</title>
+	</head>
+	<body>
+		<!--
+        新建一个简单表单
+        -->
+		<form name="form1" action="" title="一个简单的表单">
+			<!--
+               一个用户名输入框，一个密码输入框，一个提交按钮
+            -->
+            <input type="text" name="iname" />
+            <input type="text"  />
+            <input type="submit" />
+		</form>
+		
+		<br /><hr /><br />
+		<!--
+        	什么是URL
+        -->
+        <!--
+        	按钮
+        	
+        -->
+        <form>
+        	<input type="text" name="iname" />
+            <input type="text" name="ipwd" />
+            <input type="submit" />
+        	<input type="button" />
+        
+        <!--5类10种
+        	输入2种 text/password
+        	按钮5种
+        -->
+        <!--
+                     图片型元素 image 具有提交功能
+        -->
+        <br />
+      
+       	<input type="image" src="../img/kh.jpeg" width="50" height="50"/>
+       <br />
+       <!--
+       	文件型元素:
+       -->
+       <input type="file" />
+       <br />
+       <!--
+       	隐藏型元素 只是隐藏，数据任然提交
+       -->
+       <input type="hidden" value="jay" name="star"/>
+       <!--
+disabled="disabled" 不能用不能提交
+value="value" 定义表单的初始值 
+value属性不是为了显示而是为了提交，所有定义的value值会被提交给服务器[前提是元素定义了name参数] 
+(改变宽度)size="number"  设置输入元素的参数 
+(最多允许输入字符个数)maxlength="number"
+(自动获取焦点，急打开网页光标自动在某个框里闪烁)autofoucs="autofoucs"
+max="number/date" 设置输入元素最大值
+min=""    
+readonly="readonly" 可以看不能用可以提交
+pattern="正确表达式"
+checked="checked" 设置按钮元素是否被选中   
+src="URL"设置图片元素的URL地址
+align="left/right/top/middle/bottom"
+art="text" -->
+        </form> 
+        
+        <br /><hr />
+        <br /><br />
+        <form name="form1" method="get" action="">
+        	<!--单行文本输入框
+        		type 设置表单元素类型
+        		name 设置表单元素的参数名
+        		value设置表单元素的初始值
+        		size 设置表单元素的宽度
+        		maxlength设置表单元素的最大字符个数
+        	-->
+        	<p>
+        		姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:
+        		<input type="text" name="iname"  size="20" maxlength="4"/>
+        	<!--密码输入框-->
+        	<p>
+        		密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+        		<input type="password" name="ipwd"  size="20"/>
+        	<!--按钮-->
+        	<p>
+        		<!--这里value--意义:传输男或女被选择-->
+        		性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:
+        		<input type="radio" name="isex"checked="checked" value="male" id="male"/>
+        		<label for="male"><img src="../img/njy.jpg"width="10" height="10"/>&nbsp;男&nbsp;</label>
+        		<input type="radio" name="isex" value="female" id="female1"/>
+        		<label for="female"><img src="../img/samsung.jpg" width="10" height="10"/>&nbsp;女&nbsp;</label>
+        		<!--怎么将多个按钮同一时间只能选中一个？将name参数定义成一样即可-->
+        		
+        	</p>
+        		<!--复选框必须将name参数名定义成不一样-->
+        		<p>
+        		爱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好:
+        		<input type="checkbox" name="ilike1" value="吃饭" />&nbsp;吃饭&nbsp;
+        		<input type="checkbox" name="ilike2" value="睡觉" />&nbsp;睡觉&nbsp;
+        		</p>
+        		<!--下拉列表-->
+        		出生日期:
+        		<input name="iyear" value="yyyy" size="4" maxlength="4" />&nbsp;年&nbsp;
+        	 	<!--size设置一次显示几个列表项 -->
+        	 	<!--multiple设置一次可以选中多个，用户要配合ctrl键才能选中多个 -->
+        			<select name="imon" size="2" multiple="2">
+        			<!--这里的value=“”很重要-->
+        			<option value="">[选择月份]</option>
+        			<!--这里的value简化了表单的提交数据，合理的使用valu可以简化数据的提交-->
+        			<option value="1">一月</option>
+        			<option value="2">二月</option>
+        			<option value="3">三月</option>
+        			<option value="4">四月</option>
+        			<option value="5">五月</option>
+        			<option value="6">六月</option>
+        			<option value="7">七月</option>
+        			<option value="8">八月</option>
+        			
+        		</select>&nbsp;月
+        		
+        	</p>
+        	
+        	
+        	</p>
+        	<!--普通按钮-->
+        	<input type="button" name="button" value="普通" />
+        	<!--提交和重置按钮可以加value也可以不加,默认有提交和重置两个字-->
+        	<input type="submit" name="submit" />
+        	<!--重置按钮-->
+        	<input type="reset" name="reset" />
+        	<!--多行文本区元素 row是定义行 cols定义列-->
+        	<p>
+        		<textarea name="textarea" rows="6" cols="20">
+        			人间正道是沧桑1213424人间正21424道是沧桑人间正道是沧1213桑人间正道是沧桑
+        		</textarea>
+        	</p>
+        	
+        	<input type="submit" />
+        </form>
+	</body>
+</html>
