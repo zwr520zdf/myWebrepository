@@ -1,0 +1,49 @@
+* {
+	margin: 0;  /*外部的间距*/
+	padding: 0; /*内部的间距*/
+	border: 0;  
+	font-size: 15pt;
+	border-right-color: gray;
+}
+
+#nav {								/*对整个div层设置*/
+	width: auto;
+	height: 50px;
+	background-color: #690;
+	/*上下画线*/
+	border-top: #060 2px solid;
+	border-bottom: #060 2px solid;
+}
+
+#nav ul {
+	/*去掉小圆点*/
+	list-style: none;
+	margin-left: 40px;
+}
+
+#nav li {
+	/*使li横向显示在div中*/
+	display: inline;
+	/*垂直居中「值必须=div高度值」*/
+	line-height: 50px;
+	/*控制均匀分布*/
+	margin-left: 100px;
+}
+
+#nav a {
+	color: #FFF;
+	/*去除下划线*/
+	text-decoration: none;
+	padding: 12px;
+}
+
+/*a:hover - 设置悬浮样式*/
+#nav a:hover {
+	background-color: #060;
+}
+
+/*
+a:link - 设置未访问的链接
+a:visited - 设置已访问的链接
+a:active - 设置被选择的链接
+*/

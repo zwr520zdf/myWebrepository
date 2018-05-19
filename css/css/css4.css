@@ -1,0 +1,8 @@
+/*外部式CSS代码资源*/
+span {
+	color: green;
+	font-size: 30px;
+	font-weight: bold;
+	/*华文新魏*/
+	font-family: STxinwei;
+}

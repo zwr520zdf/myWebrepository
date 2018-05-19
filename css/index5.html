@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>3种CSS代码引入方式的优先级</title>
+		
+		<!--2、嵌入式:-->
+		<style type="text/css">
+			span {
+				color: green;
+			}
+		</style>
+		
+		<!--3、外部式:-->
+		<link href="css/css5.css" type="text/css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<h4>Android移动操作系统：</h4>是一种
+
+		<!--1、内联式:-->
+		<span>基于Linux的</span>、
+		<span style="color: pink;">自由以及开放源代码的</span>操作系统，主要使用于移动设备，如：智能手机和平板电脑等。由
+		<span style="color: pink;">Google公司</span>和
+		<span style="color: pink;">开放手机联盟</span>领导和开发。尚未有统一名称，中国大陆较多人使用
+		<span style="color: pink;">“安卓”</span>，中国台湾多使用
+		<span style="color: pink;">“安致”</span>。
+	</body>
+
+</html>
