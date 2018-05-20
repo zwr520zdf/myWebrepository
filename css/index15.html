@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>不定宽块状元素的水平居中2</title>
+		
+		<style type="text/css">
+			/*Step 1:设置display:inline*/
+			.container li {
+				display: inline;
+				
+				/*设置li文本之间的间隔*/
+				margin-right: 10px;
+			}
+			
+			.container ul {
+				display: inline;
+				
+				/*设置去除小圆点样式*/
+				list-style: none;
+				/*设置消除文本和div框之间的间隔*/
+				margin: 0;
+				padding: 0;
+			}
+			
+			/*Step 2:设置text-align:center*/
+			.container {
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<ul>
+				<li>
+					<a href="#">凤凰网</a>
+				</li>
+				
+				<li>
+					<a href="#">新浪网</a>
+				</li>
+				
+				<li>
+					<a href="#">腾讯网</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

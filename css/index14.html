@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>不定宽块状元素的水平居中1</title>
+
+		<style type="text/css">
+			ul {
+				border: 2px blue dashed;
+			}
+			
+			table {
+				/*第二步:*/
+				/*设置左右margin值为auto「原理:嵌套进入table后即变为定宽块状元素」*/
+				margin: 0 auto;
+			}
+			
+			.wrap {
+				background: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--第一步:-->
+		<!--嵌套进入table标签-->
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<!--注意:ul默认是不定宽块状元素-->
+						<ul>
+							<li>我是第一行文本</li>
+							<li>我是第二行文本</li>
+							<li>我是第三行文本</li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	
+		<!--实现下面的div容器水平居中显示-->
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<div class="wrap">设置我所在的div容器水平居中。</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+
+</html>

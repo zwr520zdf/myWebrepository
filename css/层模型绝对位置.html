@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>布局模型3·层模型「绝对定位」</title>
+		
+		<style type="text/css">
+			div {
+				/*说明:所有元素默认居父容器左上角显示*/
+				width: 200px;
+				height: 200px;
+				border: 2px red solid;
+
+				/*设置DIV相对于父包含块「这里是浏览器窗口」向右100px,向下50px*/
+				position: absolute;
+				left: 100px;
+				top: 50px;
+				
+				/*
+				关于正负值的说明:
+				
+				同填充padding/边界margin一样:
+				水平方向上:值为正数表向右,值为负数表向左
+				垂直方向上:值为正数表向下,值为负数表向上
+				*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="div1"></div>
+	</body>
+
+</html>

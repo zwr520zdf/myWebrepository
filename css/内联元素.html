@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>盒模型·内联元素</title>
+
+		<style type="text/css">
+			a,
+			span,
+			strong,
+			em {
+				background: goldenrod;
+				/*存在如下隐藏属性:*/
+				/*display: inline*/
+				/*display: block;*/
+			}
+			
+			div {
+				background: red;
+				/*设置非内联元素为内联元素:*/
+				display: inline;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--以下元素默认都是内联元素:-->
+		<a href="#">百度</a>
+		<a href="#">腾讯</a>
+
+		<span>33333333</span>
+		<span>44444444</span>
+
+		<strong>5555555</strong>
+		<em>66666666</em>
+		
+		<!--设置非内联元素为内联元素:-->
+		<div>我是一个块状元素,但我想变成一个内联元素</div>
+	</body>
+
+</html>

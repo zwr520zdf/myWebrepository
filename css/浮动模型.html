@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>布局模型2·浮动模型</title>
+		
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+				border: 2px red solid;
+				
+				/*1.同一行水平居左*/
+				float: left;
+				
+				/*2.同一行水平居右*/
+				/*float: right;*/
+				
+				/*3.思考:同一行但一左一右*/
+				/*分别应用浮动模型的CSS样式*/
+			}
+			
+			#div1 {
+				float: left;
+			}
+			
+			#div2 {
+				float: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="div1">盒子1</div>
+		<div id="div2">盒子2</div>
+	</body>
+
+</html>

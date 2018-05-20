@@ -30,7 +30,7 @@
 
 ``` font属性
 <b>加粗</b> | <i>倾斜</i> | <u>下划线</u> |
-<tt>等宽文字</tt> | <cite>引用文本</cite> | 
+<tt>等宽文字</tt> | <cite>引用文本</cite> |
 <em>普通强调</em> | <strong>特别强调</strong> |
 <sup>上标</sup> | <sub>下标</sub>
 ```
@@ -291,7 +291,7 @@
 - frameset标签的可选属性：
   - colse="像素值 |%|*" 设置框架集中的列的数目和尺寸
    注:用于将文档进行左右切割
-  - rows="像素值 |%|*"	设置框架集中的行的数目和尺寸
+  - rows="像素值 |%|*"设置框架集中的行的数目和尺寸
    注:用于将文档进行上下切割
 
 - 框架frame
@@ -518,3 +518,105 @@ input[type="text"] {
 ....
 <input type="text" name="name" value="姓名" size="20" />
 ```
+
+- CSS的格式化排版：
+
+  - 文字排版·字体：font-family: "STxinwei"
+
+  - 文字排版·字号、颜色：font-size: 20px;
+  - 文字排版·粗体、斜体：font-weight: bold; 粗体; font-style: italic; 斜体
+  - 文字排版·粗体、斜体：font-weight: bold; 粗体
+  - 文字排版·下划线、删除线：text-decoration: underline;下划线；text-decoration: line-through;删除线
+  - 段落排版·行间距「行高」：line-height: 1.5em;
+  - 段落排版·中文汉字或英文字母间距间距、单词间距：letter-spacing: 50px; 文字或英文间距
+  - 段落排版·对齐：text-align: center：设置块状元素中的内容的对齐方式;支持:left | center | right
+
+- CSS盒模型
+
+- 标签元素分为3种不同的类型：块状元素  |  内联元素/行内元素  |  内联块状元素
+
+- 元素分类·块状元素：
+  - 特点：
+    - 每个块状元素都从新的一行开始，并且其后的元素也另起一行「即：一个块状元素独占一行」；
+    - 块状元素的高度、宽度、行高以及顶部和底部的间距都可以设置；
+    - 块状元素在不设置宽度和高度的时候，默认填充父容器「即：占满100%」。
+
+  - 典型的块状元素：div  |  p  |  hx  |  form  |  ul  |  ol...
+
+  - 设置非块状元素为块状元素：display:block（不设置宽高，宽度依旧会占满整个父容器）
+
+```块状元素
+  div {
+        background-color: pink;
+      }
+
+      a {
+        border: 2px solid green;
+        /*设置非块状元素为块状元素*/
+        display: block;
+      }
+```
+
+- 元素分类·内联/行内元素：
+  - 特点：
+    - 默认和其他元素在同一行中；
+    - 元素的宽度、高度以及顶部和底部的间距都不可以设置；
+    - 元素的宽度默认是它包含的文字或图片的宽度，不可改变。
+
+  - 典型的内联元素：a  |  span  |  lable  |  strong  |  em...
+
+  - 设置非内联元素为内联元素：display:inline
+
+```内联元素
+    a,
+      span,
+      strong,
+      em {
+        background: goldenrod;
+        /*存在如下隐藏属性:*/
+        /*display: inline*/
+        /*display: block;*/
+      }
+      div {
+        background: red;
+        /*设置非内联元素为内联元素:*/
+        display: inline;
+      }
+```
+
+- 元素分类·内联块状元素：
+  - 特点：
+    - 默认和其他元素在同一行中；
+    - 元素的宽度、高度以及顶部和底部的间距都可以设置；
+    - 同时具备内联元素、块状元素的特点。
+
+  - 典型的内联块状元素：img  |  input...
+
+  - 设置其他元素为内联块状元素display:inline-block
+
+```内联块状元素
+  a {
+        /*设置背景颜色*/
+        background: greenyellow;
+        /*设置文字水平居中*/
+        text-align: center;
+        /*设置文字垂直居中*/
+        line-height: 50px;
+        /*注意:这里默认设置宽度/高度无效「内联元素不可设置」*/
+        width: 50px;
+        height: 50px;
+        /*设置内联元素a为内联块状元素*/
+        display: inline-block;
+      }
+```
+
+## CSS总结：
+
+- 掌握head头元素
+
+- 学会内联式、嵌入式、外部式的CSS代码引入
+- 掌握基本的9种选择器
+- 掌握一些CSS的常规格式化排版
+- 了解标签分为元素分为：块状元素|内联元素|内联块状元素
+- 了解CSS的盒模型和3种布局模型
+- 掌握行内元素的水平居中设置以及定宽块状元素的水平居中设置

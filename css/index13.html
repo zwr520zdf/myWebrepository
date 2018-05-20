@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>定宽块状元素的水平居中</title>
+		
+		<style type="text/css">
+			div {
+				border: 1px solid red;
+				/*以下2个条件缺一不可:*/
+				/*1)定宽*/
+				width: 420px;
+				/*2)左右margin设置为auto*/
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin-left: auto;
+				margin-right: auto;
+				/*
+				上面4句简写为1句:
+				
+				margin: 20px auto;
+				*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>我是一个定宽块状元素，哈哈哈，但是我想水平居中显示。</div>
+	</body>
+
+</html>
