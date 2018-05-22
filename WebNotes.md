@@ -623,6 +623,90 @@ input[type="text"] {
 
 ***
 
+## bootstrap
+
+- 概念：Bootstrap 是一个用于快速开发 Web 应用程序和网站的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的。
+
+- 框架样式的引入
+
+``` 引入
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+```
+
+- 表格
+
+![表格](https://i.loli.net/2018/05/22/5b03cb78db414.png)
+
+```表格
+<table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td>Anna</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Debbie</td>
+       </tr>
+      <tr>
+        <td>3</td>
+        <td>John</td>
+      </tr>
+    </tbody>
+```
+
+- Bootstrap 提供了下列类型的表单布局：
+  - 垂直表单（默认）：
+    - 向父 <form> 元素添加 role="form"。
+    - 把标签和控件放在一个带有 class .form-group 的 <div> 中。这是获取最佳间距所必需的。
+    - 向所有的文本元素 添加 class ="form-control" 。
+  - 内联表单
+    - 如果需要创建一个表单，它的所有元素是内联的，向左对齐的，标签是并排的，请向 <form\> 标签添加 class .form-inline。
+  - 水平表单
+    - 向父 <form\> 元素添加 class .form-horizontal。
+    - 把标签和控件放在一个带有 class .form-group 的 <div\> 中。
+    - 向标签添加 class .control-label。
+
+- Bootstrap 按钮:任何带有 class .btn 的元素都会继承圆角灰色按钮的默认外观。但是 Bootstrap 提供了一些选项来定义按钮的样式，具体如下表所示：
+
+![按钮](https://i.loli.net/2018/05/22/5b03d00470987.png)
+
+- 输入框组:输入框组扩展自 表单控件。使用输入框组，您可以很容易地向基于文本的输入框添加作为前缀和后缀的文本或按钮。
+
+- 向 .form-control 添加前缀或后缀元素的步骤如下：
+  - 把前缀或后缀元素放在一个带有 class .input-group 的 <div\> 中。
+  - 接着，在相同的 <div\> 内，在 class 为 .input-group-addon 的 <span\> 内放置额外的内容。
+  - 把该 <span\> 放置在 <input\> 元素的前面或者后面。
+
+- 输入框组的大小:通过向 .input-group 添加相对表单大小的 class（比如 .input-group-lg、input-group-sm）来改变输入框组的大小。输入框中的内容会自动调整大小。
+
+- 创建一个基本的进度条的步骤如下：
+  - 添加一个带有 class .progress 的 <div\>。
+  - 接着，在上面的 <div\> 内，添加一个带有 class .progress-bar 的空的 <div\>。
+  - 添加一个带有百分比表示的宽度的 style 属性，例如 style="width: 60%"; 表示进度条在 60% 的位置。
+
+## 总结：
+
+- 掌握基本的bootstrap框架及样式引入
+- 学习bootstrap CSS样式
+  - 表格
+  - 表单
+  - 按钮
+- 学习常见的布局组件
+  - 下拉菜单
+  - 按钮组件
+- 学习bootstrap里面的输入框组:进度条的使用
+
+***
+
 ## JS
 
 - 概念：JavaScript「JS」是一种高级的、动态的、弱类型的、解释型的计算机编程脚本语言。
