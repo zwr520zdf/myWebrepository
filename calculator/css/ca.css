@@ -1,0 +1,135 @@
+body{
+	background-color:  coral;
+}
+#container {
+	/*设置DIV的宽度「说明:不设置时DIV默认宽度占满屏幕」*/
+	width: 380px;
+	height: 330px;
+	
+	margin:12.5% auto;
+	border-radius:5px;
+	box-shadow: inset 0 0 10px 0  black;
+	background-color: burlywood
+	}
+
+#first{
+	width: 315px;
+	height: 20px;
+	padding: 20px;
+	
+		
+}
+#text{
+	/*设置显示屏的样式*/
+	width: 100%;
+	height: 30px;
+	border-radius:5px;
+	padding: 10px;
+	box-shadow: inset 0 3px 0  lightcoral;
+	/*文字右对齐*/
+	text-align: right;
+}
+
+.second{
+	width: 400px;
+	height: 30px;
+	padding:10px;	/*内边距*/
+	float: left; /*元素向左浮动*/
+	
+}
+
+.button{
+width: 50px;
+float: left;
+padding:10px
+}
+	
+
+#sixthleft{
+	width: 120px;
+	height: 30px;
+	float: left;
+	padding:10px;
+}	
+
+.ling{
+width: 130px;
+float: left;
+padding:10px;
+border-radius:5px;
+border: 1px solid #999;
+background-color: aquamarine;
+margin:auto;   /*外边距调为自动*/
+}
+
+#sixthright{
+	width:220px;
+	height: 100px;
+	float:left;
+}
+
+
+
+#seventh{
+	
+	width: 130px;
+	height: 30px;
+	padding:10px;
+	float: left;
+	background-color: #FFFF00
+}
+
+
+.denghao{
+width: 60px;
+height: 90px;
+float: left;
+padding:10px;
+border-radius:5px;
+border: 1px solid #999;
+background-color: #333333;
+color: white;
+
+}
+
+
+.button1{
+width: 60px;
+margin: 0px;
+float: left;
+padding:10px;
+border-radius:5px;
+border: 1px solid #999;
+background-color: aquamarine;
+}
+
+.button11{
+width: 60px;
+margin: 0px;
+float: left;
+padding:10px;
+border-radius:5px;
+border: 1px solid #999;
+background-color: chocolate;
+}
+
+.button12{
+width: 60px;
+margin: 0px;
+float: left;
+padding:10px;
+border-radius:5px;
+border: 1px solid #999;
+background-color: #333333;
+color: white;
+}
+
+.button13{
+width: 60px;
+margin: 0px;
+float: left;
+padding:10px;
+border-radius:5px;
+border: 1px solid #999;
+background-color: grey;
+}

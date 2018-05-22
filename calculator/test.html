@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/ca.css" type="text/css" rel="stylesheet" />
+		<script src="js/calculator.js"></script>
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<div id="first"><input type="text" id="text" /></div>
+			<div class="second">
+				<div class="button"><input type="button" value="开机" class="button11" onclick="start()" /></div>
+				<div class="button"><input type="button" value="关机" class="button11" onclick="stop()" /></div>
+				<div class="button"><input type="button" value="清屏" class="button11" onclick="clearScreen()" /></div>
+				<div class="button"><input type="button" value="退格" class="button12" onclick="tuige()"/></div>
+				<div class="button"><input type="button" value="1/x" class="button12" onclick="fenshu()" /></div>
+			</div>
+			<div class="second">
+				<div class="button"><input type="button" value="7" onclick="number(this.id)" id="7" class="button1" /></div>
+				<div class="button"><input type="button" value="8" onclick="number(this.id)" id="8" class="button1" /></div>
+				<div class="button"><input type="button" value="9" onclick="number(this.id)" id="9" class="button1" /></div>
+				<div class="button"><input type="button" value="/" onclick="number(this.id)" id="/" class="button13" /></div>
+				<div class="button"><input type="button" value="%" onclick="baifenhao(this.id)" id="%" class="button12" /></div>
+			</div>
+			<div class="second">
+				<div class="button"><input type="button" value="4" onclick="number(this.id)" id="4" class="button1" /></div>
+				<div class="button"><input type="button" value="5" onclick="number(this.id)" id="5" class="button1" /></div>
+				<div class="button"><input type="button" value="6" onclick="number(this.id)" id="6" class="button1" /></div>
+				<div class="button"><input type="button" value="*" onclick="number(this.id)" id="*" class="button13" /></div>
+				<div class="button"><input type="button" value="√" id="√" class="button12" onclick="genhao()" /></div>
+			</div>
+			<div class="second">
+			
+					<div class="button"><input type="button" value="1" onclick="number(this.id)" id="1" class="button1" /></div>
+					<div class="button"><input type="button" value="2" onclick="number(this.id)" id="2" class="button1" /></div>
+					<div class="button"><input type="button" value="3" onclick="number(this.id)" id="3" class="button1" /></div>
+					<div class="button"><input type="button" value="-" onclick="number(this.id)" id="-" class="button13" /></div>
+					<div class="button"><input type="button" value="x^2" onclick="pingfang()"  class="button12" /></div>
+
+				
+			</div>
+
+			<div class="second">
+
+				<div id="sixthleft"><input type="button" value="0" onclick="number(this.id)" id="0" class="ling" align="right" /></div>
+
+				<div id="sixthright">
+					<div class="button"><input type="button" value="." onclick="dian()" id="." class="button1" /></div>
+					<div class="button"><input type="button" value="+" onclick="number(this.id)" id="+" class="button13" /></div>
+					<div class="button"><input type="button" value="=" onclick="result()"  class="button12" /></div>
+						
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--<input type="text" id="test" />-->
+	</body>
+
+</html>
