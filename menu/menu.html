@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>下拉菜单</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="menu.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" id="aaa">
+	<div class="container-fluid"> 
+	<div class="navbar-header">
+		<div id="first"><a class="navbar-brand" href="http://china.nba.com" target="ss">主页</a></div>
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					新闻
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="http://www.xinhuanet.com" target="ss">新华网</a></li>
+					<li class="divider"></li>
+					<li><a href="https://www.toutiao.com" target="ss">今日头条</a></li>
+				</ul>
+				
+			</li>
+			
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					社交
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="https://weibo.com" target="ss">微博</a></li>
+					<li class="divider"></li>
+					<li><a href="https://www.tiktokv.com" target="ss">抖音</a></li>
+				</ul>
+				
+			</li>
+			
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					影视
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="http://www.iqiyi.com" target="ss">爱奇艺</a></li>
+					<li class="divider"></li>
+					<li><a href="http://www.youku.com" target="ss">优酷</a></li>
+					<li class="divider"></li>
+					<li><a href="https://v.qq.com" target="ss">腾讯视频</a></li>
+				</ul>
+				
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					网购 
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="https://www.jd.com" target="ss">京东</a></li>
+					<li class="divider"></li>
+					<li><a href="http://www.taobao.com" target="ss">淘宝</a></li>
+					<li class="divider"></li>
+					<li><a href="https://jx.tmall.com" target="ss">天猫</a></li>
+				</ul>
+				
+			</li>
+		</ul>
+	</div>
+	</div>
+	<iframe src="http://china.nba.com" height="1000px"  width="100%" scrolling="no" frameborder="0" name="ss"></iframe>
+</nav>
+
+</body>
+</html>
