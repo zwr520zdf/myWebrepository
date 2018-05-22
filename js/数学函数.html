@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//---------1.静态属性[6]--------
+			//Math.E	欧拉数:约等于2.718
+			//Math.LOG2E   以2为底e的对数 约等于1.443
+			//Math.L0G10E  以10为底,e的对数;约等于0.434
+			//Math.PI	       圆周率约等于3.1415926
+			//Math.SQRT1_2 1/2的平方根约等于0.707
+			//Math.SQRT2   2的平方根约等于1.414
+			document.write(Math.PI+"<br />");
+			document.write("<br />"+"<hr />"+"<br />");
+			
+			//---------2.三角函数[3个]--------
+			//注意:1)参数默认弧度制    2)1角度=n/180弧度    3)1弧度=180/n角度
+			
+			document.write("三角函数:<br />");
+			document.write("sin30°="+Math.sin(30*Math.PI/180)+"<br />"); //正弦
+			document.write("cos30°="+Math.cos(30*Math.PI/180)+"<br />"); //余弦
+			document.write("tan60°="+Math.tan(60*Math.PI/180)+"<br />"); //余弦
+			
+			//---------3.指数函数&对数函数[7个]----
+			document.write("3.指数函数&对数函数:<br /><br />");
+			document.write("e的2次方"+Math.exp(2)+"<br />");
+			document.write("8的2次方"+Math.pow(8,2)+"<br />");
+			
+			document.write("e为底,e的对数"+Math.log(Math.E)+"<br />");
+			document.write("10为底,100的对数"+Math.log10(100)+"<br />");
+			
+			
+			//logmN=logxN/logxm换底公式
+			document.write("8为底,512的对数"+Math.log10(512)/Math.log10(8)+"<br />");
+			document.write("<br />"+"<hr />"+"<br />");
+	
+			
+			//---------4.取整函数&四舍五入[4个]---------------
+			document.write("取整函数&四舍五入:");
+			document.write("1.000000000001向上取整="+Math.ceil(1.0001)+"<br />");
+			
+			//---------5.最大/最小/绝对值---------
+		</script>
+	</body>
+</html>

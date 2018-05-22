@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var color=["red","green","blue"];
+		var col1=color[0];
+		document.write(col1+"<br />");
+		
+		color[5]="white";		//注:经过这句的操作 将原数组从3个元素变成6个元素
+		var col6=color[5];
+		document.write(col6+"<br />");
+		document.write("<hr />");
+		
+		//-------------------数组的遍历-----------
+		
+		var names=["习近平","李克强","张德江","刘云山","王岐山","张高丽"];
+		for(var i=0;i<names.length;i++){
+			document.write(names[i]+"&nbsp;&nbsp;");
+		}
+		document.write("<hr />");
+			document.write("<br />"+"<hr />"+"<br />");
+			
+			//第二种 for...in效率低
+			//第三组foreach()函数
+			names.forEach(function(e){
+				document.write(e+"&nbsp;&nbsp;");
+			});
+			
+			document.write("<br />"+"<hr />"+"<br />");
+			
+			//------------设置数组的长度--------------
+			var bools=[true,false,false,true];
+			document.write("数组的长度="+bools.length+"<br />");
+			bools.length=6; //注:数组的length为非只读属性，可以动态修改，这里意味着:bools[4]~bools[5]都是undefined值
+			document.write("新数组的长度="+bools.length+"第五个为"+bools[4]);
+			document.write("<br />"+"<hr />"+"<br />");
+			//------------数组对象转字符串------------
+			//注:
+			//JS中的每个对象兜默认具有:toString()/toLocaleString()
+			var colors=["red","green","blue"];
+			document.write(colors.toString()+"<br />");
+		</script>
+	</body>
+</html>

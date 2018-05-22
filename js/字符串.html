@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var str=new String("abcdefg 1234567890");  //空格也算一个
+			document.write("字符串长度:"+str.length+"<br />");
+			
+	// 	------trim()------------
+	var  a =" Java 123";
+	var newstr=a.trim();   //不能去除中间空格，可以去掉首位空格
+	      document.write(newstr+"<br />");
+	      
+	//--------3.toUpperCase()/toLowerCase()---------
+	var str="html-Css-JAVASCRIPY";
+	var upper=str.toUpperCase();  //转大写
+
+		var newupper=str.toLowerCase(); //转小写
+		
+		document.write(upper+"<br />");
+		document.write(newupper+"<br />");
+		
+	//-----------4.charAt()------------
+	var str="Anglabay杨颖";
+	document.write("4.截取的单个字符:");
+	for(var i=0;i<str.length;i++){
+		var a=str.charAt(i);
+		document.write(a+"&nbsp;");
+		
+	}
+	document.write("<br />");
+	
+//	------------------substring()/StorageEvent-------------
+	
+//	-------------------indexOf()----------- 检索字符串（第一次出现的位置)
+//------------------lastIndexOf()------------检索字符串（最后一次出现的位子）
+			var str="it's two to two to two two";
+			var index1=str.lastIndexOf("two");
+			var index2=str.lastIndexOf("two",18);//从指定位置开始找 注:当下标超过时倒着往前找
+			document.write(index1+"/"+index2);
+
+		</script>
+	</body>
+</html>

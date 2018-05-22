@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="单击修改网页背景" id="mbtn" />
+		<script type="text/javascript">
+			window.onload=function(){
+				var mbtn = document.getElementById("mbtn");
+				mbtn.onclick=function(){
+					document.body.style.backgroundImage="url(../img/123.jpg)";
+				};
+			};
+		</script>
+	</body>
+</html>

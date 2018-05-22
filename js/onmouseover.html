@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--鼠标移入和移出时修改div的边框和背景-->
+		<div style="width: 300px; height: 250px; border: 1px solid red;margin: auto; text-align: center;line-height: 250px;" onmouseover="movein()" onmouseout="moveout()" id="mdiv" >
+			注意观察我的变化
+		</div>
+		<script type="text/javascript">
+			function movein(){
+				var divObj = document.getElementById("mdiv");
+				divObj.style.background="yellow";
+			}
+			function moveout(){
+				var divObj = document.getElementById("mdiv");
+				divObj.style.background="green";
+			}
+			
+		
+		</script>
+	</body>
+</html>

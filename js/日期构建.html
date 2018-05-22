@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			//-----------1.Date()-------------
+			//注:构建一个空的日期对象，默认保存当前客户端系统时间
+
+			var date1 = new Date();
+			document.write(date1.toLocaleString() + "<br /><br />");
+
+			//----------2.Date(milliseconds)--------
+			//注：传入距离标准零点之间的毫秒数差值
+			//即:换算出从"1970/01/01 00:00:00"为起点，开始叠加的毫秒数
+			//注意:这个起点时间的时分秒还要加上所在地区的时区，北京时间的时区为东8区，所以实际的起点时间应为"1970/01/01 08:00:00"
+			//注意:
+			//1)如果两个函数中传入的时间串不合法,则返回NaN值；
+			//2)格式二如果不省略时间,IE会报错
+
+			var date2=new Date(1000*60*1);	//标准零点前进1分种
+			document.write(date2.toLocaleString()+"<br /><br />");
+
+			var date3=new Date(-1000*60*1);	//标准零点后退1分种
+			document.write(date3.toLocaleString()+"<br /><br />");
+			
+			//----------3.Date(string)--------------
+			//注:
+			//常见传入2种格式的时间串:
+			//格式一:yyyy/MM/dd HH:mm:ss;若省略时间的部分，返回的Date对象的时间为12:00:00[推荐]
+			
+			//格式二:yyyy-MM-dd HH:mm:ss;若省略时间的部分，返回的Date对象的时间为08:00:00[会加上本地时区]
+			var date4=new Date("2017/07/11 9:42:00");	
+			document.write(date4.toLocaleString()+"<br /><br />");
+			
+			var date5=new Date("2008/08/08");	//省略时间
+			document.write(date5.toLocaleString()+"<<br /><br />");
+			
+			var date6=new Date("2017-7-15");	//省略时间
+			document.write(date6.toLocaleString()+"<br /><br />");//浏览器不同有影响
+			
+			var date7=new Date("11 Jul 2017 09:47:00 GMT");
+			document.write(date7.toLocaleString()+"<br /><br />");//支持GMT串
+			
+			
+			//----------4.Date(yyyy,MM,dd,hh,mm,ss,SSS)--------------
+			//注:
+			//yyyy:	年份:4位数字
+			//MM：	月份;2位数字;注意:从0开始计数！[传值比真实值少1]
+			//dd:	可选;日期;2位数字;从1开始计算,最大31
+			//hh：	可选;小时;2位数字;取值0~23
+			//mm：	可选;分钟;2位数字;取值0~59
+			//ss：	可选;秒钟;2位数字;取值0~59
+			//SSS：	可选;毫秒;3位数字;取值0~999
+			
+			var date8=new Date(2017,6,11,9,55,0,444);//注意:月份为0~11;
+			document.write(date8.toLocaleString()+"<br /><br />");
+			
+			var date9=new Date(1997,6,1)
+				document.write(date9.toLocaleString()+"<br /><br />");
+		</script>
+	</body>
+
+</html>

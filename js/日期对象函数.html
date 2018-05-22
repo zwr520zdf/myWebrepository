@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//---------------获取时间对象的信息----------------------
+			
+			var date=new Date();
+			
+			var y=date.getFullYear();  //获取4位的年份
+			var m=date.getMonth()+1;   //获取月份[注意:从0开始]
+			var d=date.getDate();      //获取日期
+			var h=date.getHours();     //获取小时
+			var mm=date.getMinutes();  //获取分钟
+			var s=date.getSeconds();   //获取秒
+			var ms=date.getMilliseconds();//获取毫秒
+			
+			var week=date.getDay();    //获取星期[注意:星期天为0]
+			
+			var milliseconds=date.getTime();//获取标准零点/纪元时间的毫秒差值
+			
+			var str=
+					"年"+y+"<br />"+
+					"月"+m+"<br />"+
+					"日"+d+"<br />"+
+					"时"+h+"<br />"+
+					"分"+mm+"<br />";
+			document.write(str);
+			document.write("<br />");
+			
+			var date=new Date();
+			document.write(date.toLocaleString()+"<br />");
+			
+			date.setDate(2008);
+			document.write(date.toLocaleString()+"<br />");
+		
+			
+	
+		</script>
+	</body>
+</html>
