@@ -665,8 +665,8 @@ input[type="text"] {
 
 - Bootstrap 提供了下列类型的表单布局：
   - 垂直表单（默认）：
-    - 向父 <form> 元素添加 role="form"。
-    - 把标签和控件放在一个带有 class .form-group 的 <div> 中。这是获取最佳间距所必需的。
+    - 向父 <form\> 元素添加 role="form"。
+    - 把标签和控件放在一个带有 class .form-group 的 <div\> 中。这是获取最佳间距所必需的。
     - 向所有的文本元素 添加 class ="form-control" 。
   - 内联表单
     - 如果需要创建一个表单，它的所有元素是内联的，向左对齐的，标签是并排的，请向 <form\> 标签添加 class .form-inline。
